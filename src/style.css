@@ -55,3 +55,6 @@ main>section:not(.hero):not(.detail-hero),.member-group{animation:sectionReveal 
 main>section:not(.hero):not(.detail-hero),.member-group{opacity:1!important}
 @keyframes sectionReveal{from{transform:translateY(34px)}to{transform:translateY(0)}}
 @keyframes sectionRevealFallback{from{opacity:1;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.hero-photo{animation:heroStrip 18s ease-in-out infinite;transform:none;background-image:url('/hero-sprite.jpg');background-size:300% 100%;background-repeat:no-repeat;background-position:0 50%}
+@keyframes heroStrip{0%,28%{background-position:0 50%}33%,61%{background-position:50% 50%}66%,94%{background-position:100% 50%}99%,100%{background-position:0 50%}}
+@media(prefers-reduced-motion:reduce){.hero-photo{animation:none;background-position:0 50%}}
