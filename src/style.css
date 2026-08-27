@@ -28,3 +28,5 @@ body{font-family:'Pretendard Variable','Pretendard','DM Sans',sans-serif}
 .principle-list div{font-size:15px}.principle-list b{font-size:15px}.benefit-list>div{font-size:15px}.benefit-list b{font-size:15px}
 .member-tabs{gap:6px}.member-tabs button{font-size:13px;white-space:nowrap}.member-tabs button.active:after{right:0}
 body{font-size:17px}.about p,.destination p,.cta p{font-size:12px}.line-link,.all-link{font-size:11px}.destination small{font-size:9px}.member-grid div{font-size:10px}.member-note{font-size:9px}.news-meta{font-size:9px}.cta-contact,.contact-button{font-size:10px}footer{font-size:9px}.detail-intro p,.members-intro p,.join-grid p,.contact-layout p{font-size:15px}.member-card p{font-size:13px}.member-card a,.contact-table span{font-size:11px}.contact-table div{font-size:14px}
+:root{--content-max:1600px;--content-gutter:max(24px,calc((100vw - var(--content-max))/2))}
+header,.section,.members,.cta,footer,.detail-intro,.members-intro,.join-grid,.contact-layout,.principles,.benefit-section,.contact-bottom,.member-tabs,.member-directory,.join-cta{padding-left:var(--content-gutter);padding-right:var(--content-gutter)}
