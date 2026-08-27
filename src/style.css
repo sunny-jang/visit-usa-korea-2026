@@ -32,3 +32,5 @@ body{font-size:17px}.about p,.destination p,.cta p{font-size:12px}.line-link,.al
 header,.section,.members,.cta,footer,.detail-intro,.members-intro,.join-grid,.contact-layout,.principles,.benefit-section,.contact-bottom,.member-tabs,.member-directory,.join-cta{padding-left:var(--content-gutter);padding-right:var(--content-gutter)}
 .news-image{height:170px}
 @media(max-width:560px){.news-image{height:135px}}
+:root{--content-max:1400px}.news-image{height:230px}
+@media(max-width:560px){.news-image{height:180px}}
