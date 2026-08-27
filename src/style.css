@@ -34,3 +34,6 @@ header,.section,.members,.cta,footer,.detail-intro,.members-intro,.join-grid,.co
 @media(max-width:560px){.news-image{height:135px}}
 :root{--content-max:1400px}.news-image{height:230px}
 @media(max-width:560px){.news-image{height:180px}}
+.hero-panel{clip-path:none;background:transparent}.hero-panel:before{content:"";position:absolute;z-index:0;inset:0;background:var(--paper);clip-path:polygon(0 0,58% 0,100% 100%,0 100%)}.hero-copy,.scroll-note{z-index:2}.about h2{font-size:26px}.about p{font-size:13px}.destination h3{font-size:19px}.destination p{font-size:13px}.section-index span{font-size:13px}.line-link,.all-link{font-size:12px}.member-grid div{font-size:11px}.news-meta{font-size:10px}.news-card h3{font-size:15px}.cta-contact,.contact-button{font-size:11px}footer{font-size:10px}.detail-kicker{font-size:11px}.eyebrow{font-size:10px}.member-tabs button{font-size:14px}.group-title span{font-size:26px}.member-card p{font-size:14px}.contact-table div{font-size:15px}
+@media(max-width:900px){.hero-panel{clip-path:none}.hero-panel:before{clip-path:polygon(0 0,75% 0,100% 100%,0 100%)}}
+@media(max-width:560px){.hero-panel{clip-path:none}.hero-panel:before{clip-path:polygon(0 0,75% 0,100% 100%,0 100%)}}
