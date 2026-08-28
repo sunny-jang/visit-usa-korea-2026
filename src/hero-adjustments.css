@@ -1,0 +1,6 @@
+/* Keep the hero headline comfortably separated from the header mark. */
+.hero-copy{top:47%}
+
+@media(max-width:900px){
+  .hero-copy{top:47%}
+}

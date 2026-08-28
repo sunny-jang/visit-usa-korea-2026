@@ -1,4 +1,5 @@
 import '../src/style.css';
+import '../src/hero-adjustments.css';
 
 export const metadata = {
   title: 'Visit USA Korea',
