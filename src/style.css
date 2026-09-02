@@ -46,15 +46,15 @@ body{font-size:18px}.about p,.destination p,.cta p{font-size:15px}.about h2{font
 body:has(.detail-page) header .brand-logo{filter:brightness(0) invert(1)}
 .hero-photo{animation:heroSlide 18s infinite;background-position:center;background-size:cover}
 @keyframes heroSlide{0%,28%{background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=90')}33%,61%{background-image:url('https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=2200&q=90')}66%,94%{background-image:url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=2200&q=90')}100%{background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=90')}}
-main>section:not(.hero):not(.detail-hero),.member-group{animation:sectionReveal .9s ease both;animation-timeline:view();animation-range:entry 0% cover 28%}
+main>section:not(.hero):not(.detail-hero)>*,.member-group{animation:sectionReveal .9s ease both;animation-timeline:view();animation-range:entry 0% cover 28%}
 @keyframes sectionReveal{from{opacity:.12;transform:translateY(34px)}to{opacity:1;transform:translateY(0)}}
-@supports not (animation-timeline:view()){main>section:not(.hero):not(.detail-hero),.member-group{animation:sectionRevealFallback .8s ease both}}
+@supports not (animation-timeline:view()){main>section:not(.hero):not(.detail-hero)>*,.member-group{animation:sectionRevealFallback .8s ease both}}
 @keyframes sectionRevealFallback{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-@media(prefers-reduced-motion:reduce){.hero-photo,main>section:not(.hero):not(.detail-hero),.member-group{animation:none}}
+@media(prefers-reduced-motion:reduce){.hero-photo,main>section:not(.hero):not(.detail-hero)>*,.member-group{animation:none}}
 .hero-photo{animation:heroSwipe 18s infinite;will-change:transform;background-color:var(--navy)}
 @keyframes heroSwipe{0%,28%{transform:translateX(0);background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=90')}33%{transform:translateX(-100%);background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=90')}34%{transform:translateX(100%);background-image:url('https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=2200&q=90')}40%,61%{transform:translateX(0);background-image:url('https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=2200&q=90')}66%{transform:translateX(-100%);background-image:url('https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=2200&q=90')}67%{transform:translateX(100%);background-image:url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=2200&q=90')}73%,94%{transform:translateX(0);background-image:url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=2200&q=90')}99%{transform:translateX(-100%);background-image:url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=2200&q=90')}100%{transform:translateX(0);background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=90')}}
 @media(prefers-reduced-motion:reduce){.hero-photo{animation:none;transform:none}}
-main>section:not(.hero):not(.detail-hero),.member-group{opacity:1!important}
+main>section:not(.hero):not(.detail-hero)>*,.member-group{opacity:1!important}
 @keyframes sectionReveal{from{transform:translateY(34px)}to{transform:translateY(0)}}
 @keyframes sectionRevealFallback{from{opacity:1;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .hero-photo{animation:heroStrip 18s ease-in-out infinite;transform:none;background-image:url('/hero-sprite.jpg');background-size:300% 100%;background-repeat:no-repeat;background-position:0 50%}
