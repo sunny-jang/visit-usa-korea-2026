@@ -80,5 +80,9 @@ main>section:not(.hero):not(.detail-hero)>*,.member-group{opacity:1!important}
 @media(max-width:900px){.member-grid>*{min-height:86px}.member-logo-lg{height:60px}}
 @media(max-width:560px){.member-grid>*{min-height:74px}.member-logo-lg{height:50px}}
 
-/* 모바일 메뉴가 열려 있는 동안 뒤 페이지 스크롤 잠금 */
+/* 모바일 메뉴: 뒤 페이지 스크롤 잠금 + 헤더를 오버레이에 맞춰 고정 */
 html.nav-open,html.nav-open body{overflow:hidden}
+html.nav-open header{position:fixed;top:0;background:var(--navy);color:#fff}
+html.nav-open header .brand-logo{filter:brightness(0) invert(1)}
+/* 버튼은 color를 상속하지 않으므로 명시적으로 지정 */
+html.nav-open .header-tools button{color:#fff}
