@@ -1,0 +1,30 @@
+# 로컬 그누보드 개발 환경 (배포 대상 아님 — FTP로는 gnuboard/ 내용만 올립니다)
+services:
+  web:
+    image: php:8.2-apache
+    ports: ['8080:80']
+    volumes:
+      - ./gnuboard:/var/www/html
+    command: >
+      bash -c "docker-php-ext-install mysqli >/dev/null 2>&1;
+               a2enmod rewrite >/dev/null 2>&1;
+               apache2-foreground"
+    depends_on: [db]
+  db:
+    image: mariadb:10.11
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: gnuboard
+      MARIADB_USER: g5
+      MARIADB_PASSWORD: g5pass
+    ports: ['3307:3306']
+    volumes: ['dbdata:/var/lib/mysql']
+  pma:
+    image: phpmyadmin:5
+    ports: ['8081:80']
+    environment:
+      PMA_HOST: db
+      UPLOAD_LIMIT: 64M
+    depends_on: [db]
+volumes:
+  dbdata:

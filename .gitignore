@@ -6,3 +6,9 @@ dist
 *.log
 outputs/
 .pnpm-store/
+
+# 그누보드 원본 (릴리스에서 내려받음 — 우리 스킨만 git으로 관리)
+gnuboard/
+# FTP 업로드용 조립 결과
+deploy/
+dist-deploy
