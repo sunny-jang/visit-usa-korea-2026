@@ -96,6 +96,8 @@ html.nav-open .header-tools button{color:#fff}
 
 /* 메인 섹션 제목 (번호 없이 제목만) */
 .section-title{font-size:19px;line-height:1.2;font-weight:800;letter-spacing:-.2px;color:var(--red)}
+/* 뉴스룸 제목은 .section-head 로 감싸이지 않아 여백이 없다 — 회원사와 같은 25px */
+.news .section-title{margin-bottom:25px}
 .section-title.white{color:#fff}
 @media(max-width:900px){.section-title{font-size:17px}}
 @media(max-width:560px){.section-title{font-size:16px}}
