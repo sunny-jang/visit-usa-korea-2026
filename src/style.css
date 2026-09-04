@@ -88,3 +88,8 @@ html.nav-open header{position:fixed;top:0;background:var(--navy);color:#fff}
 html.nav-open header .brand-logo{filter:brightness(0) invert(1)}
 /* 버튼은 color를 상속하지 않으므로 명시적으로 지정 */
 html.nav-open .header-tools button{color:#fff}
+
+/* 회원사 카드: 소개글 4줄로 접고 더보기 */
+.member-card p.clamp{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.member-card .more{background:none;border:0;padding:0;margin:0 0 16px;display:block;color:var(--red);font-size:11px;font-weight:800;letter-spacing:.2px}
+.member-card .more:hover{text-decoration:underline}
