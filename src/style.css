@@ -48,7 +48,7 @@ footer .brand-logo{filter:brightness(0) invert(1)}
 body:has(.detail-page) header .brand-logo{filter:brightness(0) invert(1)}
 .hero-photo{animation:heroSlide 18s infinite;background-position:center;background-size:cover}
 @keyframes heroSlide{0%,28%{background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=90')}33%,61%{background-image:url('https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?auto=format&fit=crop&w=2200&q=90')}66%,94%{background-image:url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=2200&q=90')}100%{background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=90')}}
-main>section:not(.hero):not(.detail-hero)>*,.member-group{animation:sectionReveal .9s ease both;animation-timeline:view();animation-range:entry 0% cover 28%}
+main>section:not(.hero):not(.detail-hero)>*,.member-group{animation:sectionReveal .9s ease both;animation-timeline:view();animation-range:entry 0% entry 85%}
 @keyframes sectionReveal{from{opacity:.12;transform:translateY(34px)}to{opacity:1;transform:translateY(0)}}
 @supports not (animation-timeline:view()){main>section:not(.hero):not(.detail-hero)>*,.member-group{animation:sectionRevealFallback .8s ease both}}
 @keyframes sectionRevealFallback{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
@@ -139,3 +139,7 @@ html.nav-open .header-tools button{color:#fff}
 
 /* 항목명을 뺀 Contact 표는 값만 한 줄씩 */
 .contact-table.plain div{display:block;padding:18px 0}
+
+/* 가입 CTA: 남아있던 마진 때문에 세로 중앙에서 밀리던 것 보정 */
+.join-cta h2,.join-cta p{margin:0}
+@media(max-width:560px){.join-cta p{margin-top:16px}}
