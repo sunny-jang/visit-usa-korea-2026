@@ -101,3 +101,38 @@ html.nav-open .header-tools button{color:#fff}
 .section-title.white{color:#fff}
 @media(max-width:900px){.section-title{font-size:17px}}
 @media(max-width:560px){.section-title{font-size:16px}}
+
+/* 뉴스룸 3개 구성 */
+.news-grid{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.news-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.news-grid{grid-template-columns:1fr}}
+
+/* 가입 CTA 제목이 한 줄에 들어오도록 */
+.join-cta h2{font-size:clamp(20px,2.2vw,30px);letter-spacing:-1px;line-height:1.35;word-break:keep-all}
+
+/* Contact 표: 항목명 없이 값만 */
+.contact-table.plain div{display:block}
+
+/* ── 메인 상단 비율 축소: 첫 화면에 회원사 로고까지 들어오도록 ── */
+.hero{height:clamp(360px,47vh,470px)}
+.hero h1{font-size:clamp(44px,4.6vw,72px);letter-spacing:-4px}
+.hero-copy{top:46%}
+.hero-copy p{font-size:16px;margin:18px 0}
+.about{min-height:0}
+.about-copy{padding-top:18px}
+.about-images{height:236px}
+.about h2{margin-bottom:14px}
+.about p{margin-bottom:16px}
+.section{padding-top:26px;padding-bottom:20px}
+.members{padding-top:26px}
+.members .section-head{margin-bottom:18px}
+@media(max-width:900px){
+  .hero{height:clamp(340px,44vh,430px)}
+  .hero h1{font-size:44px;letter-spacing:-2.5px}
+  .about-images{height:210px;margin-top:10px}
+}
+@media(max-width:560px){
+  .hero{height:330px}
+  .hero h1{font-size:38px;letter-spacing:-2px}
+  .hero-copy p{font-size:13px;margin:14px 0}
+}
