@@ -143,3 +143,8 @@ html.nav-open .header-tools button{color:#fff}
 /* 가입 CTA: 남아있던 마진 때문에 세로 중앙에서 밀리던 것 보정 */
 .join-cta h2,.join-cta p{margin:0}
 @media(max-width:560px){.join-cta p{margin-top:16px}}
+
+/* 연락처 블록을 뺀 뒤 남은 빈 칸 정리 — 문구가 가로폭을 온전히 쓰도록 */
+.cta{display:block;padding-top:40px;padding-bottom:40px}
+.cta h2{word-break:keep-all;max-width:22em}
+.cta p{max-width:44em}
